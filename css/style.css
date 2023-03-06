@@ -3,6 +3,9 @@
   display: flex;
   gap: 2rem; }
 
+.grid {
+  display: grid; }
+
 .grid12 {
   display: grid;
   grid-template-columns: repeat(12, 1fr); }
@@ -10,6 +13,9 @@
 .grid2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr); }
+
+.grid-span {
+  grid-column: 1 / -1; }
 
 .sr-only {
   position: absolute;
@@ -21,6 +27,15 @@
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0; }
+
+.u-container {
+  max-width: var(--grid-max-width);
+  padding-inline: var(--grid-gutter);
+  margin-inline: auto; }
+
+.u-grid {
+  display: grid;
+  gap: var(--grid-gutter); }
 
 .font-primary {
   font-family: "Cinzel", serif; }
@@ -44,6 +59,7 @@
   font-size: var(--step--2); }
 
 :root {
+  /* -----------UTOPIA FLUID TYPE SCALE-------------- */
   /* Step -2: 12.50px → 19.20px */
   --step--2: clamp(0.78rem, calc(0.64rem + 0.73vw), 1.2rem);
   /* Step -1: 15.00px → 24.00px */
@@ -59,7 +75,14 @@
   /* Step 4: 37.32px → 73.24px */
   --step-4: clamp(2.33rem, calc(1.55rem + 3.9vw), 4.58rem);
   /* Step 5: 44.79px → 91.55px */
-  --step-5: clamp(2.8rem, calc(1.78rem + 5.08vw), 5.72rem); }
+  --step-5: clamp(2.8rem, calc(1.78rem + 5.08vw), 5.72rem);
+  /* -----------UTOPIA FLUID SPACE SCALE-------------- */
+  --grid-max-width: 77.5rem;
+  --grid-gutter: var(
+    --space-s-l,
+    clamp(1.13rem, calc(0.65rem + 2.39vw), 2.5rem)
+  );
+  --grid-columns: 12; }
 
 * {
   box-sizing: border-box; }
@@ -157,3 +180,10 @@ a {
 
 .portfolio-project-img {
   width: 100%; }
+
+.blog-container {
+  grid-template-columns: repeat(3, 1fr);
+  grid-column: 2 / 12; }
+
+.blog-card {
+  background-color: whitesmoke; }
