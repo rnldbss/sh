@@ -6,11 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Copywriter | Sophia Habl</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+
     <script src="nav.js" defer></script>
   </head>
   <body>
     <header class="primary-header flex">
-      <h3>Sophia Habl</h3>
+      <h3 class="font-primary">Sophia Habl</h3>
       <button
         class="mobile-nav-toggle"
         aria-controls="nav"
@@ -19,7 +26,7 @@
         <span class="sr-only">Menu</span>
       </button>
       <nav class="">
-        <ul id="nav" class="nav flex" data-visible="false">
+        <ul id="nav" class="nav flex font-secondary" data-visible="false">
           <li><a href="http://">HOME</a></li>
           <li><a href="http://">ABOUT ME</a></li>
           <li><a href="http://">CONTACT ME</a></li>
@@ -31,38 +38,44 @@
     </header>
 
     <footer class="footer">
-      <h3>Sophia Habl</h3>
-      <ul class="footer-social">
-        <li aria-label="Instagram">
-          <a href=""
-            ><img
-              src="img/instagram-icon.svg"
-              alt=""
-              class="footer-social-icon"
-          /></a>
-        </li>
-        <li aria-label="Linkedin">
-          <a href=""
-            ><img
-              src="img/linkedin-icon.svg"
-              alt=""
-              class="footer-social-icon"
-            />
-          </a>
-        </li>
-      </ul>
-      <nav>
-        <ul class="footer-nav">
-          <li><a href="http://">HOME</a></li>
-          <li><a href="http://">ABOUT ME</a></li>
-          <li><a href="http://">CONTACT ME</a></li>
-          <li><a href="http://">SERVICES</a></li>
-          <li><a href="http://">PORTFOLIO</a></li>
-          <li><a href="http://">BLOG</a></li>
+      <div class="footer-social">
+        <h3 class="font-primary">Sophia Habl</h3>
+        <ul>
+          <li aria-label="Instagram">
+            <a href=""
+              ><img
+                src="img/instagram-icon.svg"
+                alt=""
+                class="footer-social-icon"
+            /></a>
+          </li>
+          <li aria-label="Linkedin">
+            <a href=""
+              ><img
+                src="img/linkedin-icon.svg"
+                alt=""
+                class="footer-social-icon"
+              />
+            </a>
+          </li>
         </ul>
-      </nav>
-      <h3>Contact</h3>
-      <address>email:</address>
+      </div>
+      <div class="footer-nav">
+        <nav>
+          <ul class="font-secondary">
+            <li><a href="http://">HOME</a></li>
+            <li><a href="http://">ABOUT ME</a></li>
+            <li><a href="http://">CONTACT ME</a></li>
+            <li><a href="http://">SERVICES</a></li>
+            <li><a href="http://">PORTFOLIO</a></li>
+            <li><a href="http://">BLOG</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <address>email:</address>
+      </div>
       <small>copyright</small>
     </footer>
   </body>
