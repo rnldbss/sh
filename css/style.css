@@ -7,6 +7,10 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr); }
 
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -25,25 +29,37 @@
   font-family: "Poppins", sans-serif; }
 
 .heading-1 {
-  font-size: var(--step-3); }
+  font-size: var(--step-4); }
+
+.heading-2 {
+  font-size: var(--step-1); }
+
+.heading-3 {
+  font-size: var(--step-0); }
+
+.paragraph-1 {
+  font-size: var(--step--1); }
+
+.paragraph-2 {
+  font-size: var(--step--2); }
 
 :root {
-  /* Step -2: 12.50px → 25.60px */
-  --step--2: clamp(0.78rem, calc(0.5rem + 1.42vw), 1.6rem);
-  /* Step -1: 15.00px → 32.00px */
-  --step--1: clamp(0.94rem, calc(0.57rem + 1.85vw), 2rem);
-  /* Step 0: 18.00px → 40.00px */
-  --step-0: clamp(1.13rem, calc(0.65rem + 2.39vw), 2.5rem);
-  /* Step 1: 21.60px → 50.00px */
-  --step-1: clamp(1.35rem, calc(0.73rem + 3.09vw), 3.13rem);
-  /* Step 2: 25.92px → 62.50px */
-  --step-2: clamp(1.62rem, calc(0.82rem + 3.98vw), 3.91rem);
-  /* Step 3: 31.10px → 78.13px */
-  --step-3: clamp(1.94rem, calc(0.92rem + 5.11vw), 4.88rem);
-  /* Step 4: 37.32px → 97.66px */
-  --step-4: clamp(2.33rem, calc(1.02rem + 6.56vw), 6.1rem);
-  /* Step 5: 44.79px → 122.07px */
-  --step-5: clamp(2.8rem, calc(1.12rem + 8.4vw), 7.63rem); }
+  /* Step -2: 12.50px → 19.20px */
+  --step--2: clamp(0.78rem, calc(0.64rem + 0.73vw), 1.2rem);
+  /* Step -1: 15.00px → 24.00px */
+  --step--1: clamp(0.94rem, calc(0.74rem + 0.98vw), 1.5rem);
+  /* Step 0: 18.00px → 30.00px */
+  --step-0: clamp(1.13rem, calc(0.86rem + 1.3vw), 1.88rem);
+  /* Step 1: 21.60px → 37.50px */
+  --step-1: clamp(1.35rem, calc(1rem + 1.73vw), 2.34rem);
+  /* Step 2: 25.92px → 46.88px */
+  --step-2: clamp(1.62rem, calc(1.16rem + 2.28vw), 2.93rem);
+  /* Step 3: 31.10px → 58.59px */
+  --step-3: clamp(1.94rem, calc(1.35rem + 2.99vw), 3.66rem);
+  /* Step 4: 37.32px → 73.24px */
+  --step-4: clamp(2.33rem, calc(1.55rem + 3.9vw), 4.58rem);
+  /* Step 5: 44.79px → 91.55px */
+  --step-5: clamp(2.8rem, calc(1.78rem + 5.08vw), 5.72rem); }
 
 * {
   box-sizing: border-box; }
@@ -72,8 +88,7 @@ a {
   width: 100%; }
 
 .hero {
-  align-items: center;
-  height: 80vh; }
+  align-items: center; }
   .hero-text {
     grid-column: 2 / 9; }
   .hero-img {
@@ -136,3 +151,9 @@ a {
     columns: 2; }
   .footer-nav a:is(:hover, :focus) {
     color: aquamarine; }
+
+.portfolio-project-1 {
+  grid-column: 4 / 10; }
+
+.portfolio-project-img {
+  width: 100%; }
