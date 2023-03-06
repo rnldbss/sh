@@ -31,12 +31,17 @@ a {
   white-space: nowrap;
   border-width: 0; }
 
+.font-primary {
+  font-family: "Cinzel", serif; }
+
+.font-secondary {
+  font-family: "Poppins", sans-serif; }
+
 .primary-header {
   align-items: center;
   justify-content: space-between; }
 
 .nav {
-  background-color: #679267;
   backdrop-filter: blur(1rem); }
 
 .mobile-nav-toggle {
@@ -47,7 +52,7 @@ a {
     position: fixed;
     z-index: 1000;
     inset: 0 0 0 30%;
-    background: #679267;
+    background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(1rem);
     flex-direction: column;
     padding: 10rem 2em;
