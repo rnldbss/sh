@@ -6,12 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Copywriter | Sophia Habl</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="nav.js" defer></script>
   </head>
   <body>
-    <header>
-      <nav>
-        <h3>Sophia Habl</h3>
-        <ul class="nav">
+    <header class="primary-header flex">
+      <h3>Sophia Habl</h3>
+      <button
+        class="mobile-nav-toggle"
+        aria-controls="nav"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Menu</span>
+      </button>
+      <nav class="">
+        <ul id="nav" class="nav flex" data-visible="false">
           <li><a href="http://">HOME</a></li>
           <li><a href="http://">ABOUT ME</a></li>
           <li><a href="http://">CONTACT ME</a></li>
