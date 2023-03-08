@@ -246,3 +246,18 @@ h6 {
     background-color: whitesmoke;
     border-radius: 4px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+
+.about {
+  padding: 8rem 0; }
+  .about-wrapper {
+    grid-column: 2/ 12;
+    border-bottom: 2px solid #679267;
+    padding-bottom: 3rem; }
+  .about-text {
+    grid-column: 1 / 8;
+    align-self: self-end;
+    border-top: 2px solid #679267;
+    padding-top: 3rem; }
+  .about-img {
+    grid-column: 8 / 13;
+    width: 100%; }
