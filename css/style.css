@@ -20,6 +20,10 @@
 .u-padding {
   padding: var(--space-s-m); }
 
+.u-padding-t-b {
+  padding-top: var(--space-l-xl);
+  padding-bottom: var(--space-l-xl); }
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -240,17 +244,17 @@ h6 {
   .portfolio-project-img {
     width: 30%; }
 
-.blog {
-  height: 90vh; }
-  .blog-container {
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    grid-column: 2 / 12; }
-  .blog-img {
-    width: 100%; }
-  .blog-card {
-    background-color: whitesmoke;
-    border-radius: 4px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+.blog-container {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-column: 2 / 12; }
+
+.blog-img {
+  width: 100%; }
+
+.blog-card {
+  background-color: whitesmoke;
+  border-radius: 4px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
 
 .about {
   padding: 8rem 0; }
