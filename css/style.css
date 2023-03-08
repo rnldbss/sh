@@ -40,8 +40,11 @@
   display: grid;
   gap: var(--grid-gutter); }
 
-.u-icon-green {
+.u-color-secondary {
   color: #679267; }
+
+.u-color-terciary {
+  color: #ffffff; }
 
 .font-primary {
   font-family: "Cinzel", serif; }
@@ -240,7 +243,7 @@ h6 {
 .blog {
   height: 90vh; }
   .blog-container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     grid-column: 2 / 12; }
   .blog-img {
     width: 100%; }
