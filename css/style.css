@@ -40,6 +40,9 @@
   display: grid;
   gap: var(--grid-gutter); }
 
+.u-icon-green {
+  color: #679267; }
+
 .font-primary {
   font-family: "Cinzel", serif; }
 
@@ -251,13 +254,15 @@ h6 {
   padding: 8rem 0; }
   .about-wrapper {
     grid-column: 2/ 12;
-    border-bottom: 2px solid #679267;
+    border-bottom: 1.5px solid #679267;
     padding-bottom: 3rem; }
   .about-text {
     grid-column: 1 / 8;
     align-self: self-end;
-    border-top: 2px solid #679267;
+    border-top: 1.5px solid #679267;
     padding-top: 3rem; }
   .about-img {
-    grid-column: 8 / 13;
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 2rem; }
+    .about-img-wrapper {
+      grid-column: 8 / 13; }
