@@ -185,6 +185,9 @@ h6 {
 .nav {
   backdrop-filter: blur(1rem); }
 
+.nav a:is(:hover, :focus) {
+  color: #679267; }
+
 .mobile-nav-toggle {
   display: none; }
 
@@ -193,8 +196,9 @@ h6 {
     position: fixed;
     z-index: 1000;
     inset: 0 0 0 30%;
-    background: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(1rem);
+    background: rgba(103, 146, 103, 0.3);
+    backdrop-filter: blur(2rem);
+    color: #ffffff;
     flex-direction: column;
     padding: 10rem 2em;
     transform: translateX(100%);
