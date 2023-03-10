@@ -16,8 +16,15 @@
       src="https://kit.fontawesome.com/42144b8e78.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <script src="nav.js" defer></script>
+    <script src="swiper.js" defer></script>
   </head>
   <body>
     <!--------------------------------------HEADER----------------------------------->
@@ -60,34 +67,57 @@
     <!--------------------------------------PORTFOLIO----------------------------------->
 
     <section class="portfolio">
-      <div class="portfolio-project-1 u-grid">
-        <img class="portfolio-project-img" src="img/notmilk.png" alt="" />
-        <div>
-          <h2 class="font-primary heading-2">Not Milk but super powered</h2>
-          <p class="font-secondary paragraph-2">
-            have a look at this awesome copy
-          </p>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="portfolio-project-1">
+              <img class="portfolio-project-img" src="img/notmilk.png" alt="" />
+              <div>
+                <h2 class="font-primary heading-2">
+                  Not Milk but super powered
+                </h2>
+                <p class="font-secondary paragraph-2">
+                  have a look at this awesome copy
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="portfolio-project-1">
+              <img class="portfolio-project-img" src="img/notmilk.png" alt="" />
+              <div>
+                <h2 class="font-primary heading-2">
+                  Not Milk but super powered
+                </h2>
+                <p class="font-secondary paragraph-2">
+                  have a look at this awesome copy
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="portfolio-project-1">
+              <img class="portfolio-project-img" src="img/notmilk.png" alt="" />
+              <div>
+                <h2 class="font-primary heading-2">
+                  Not Milk but super powered
+                </h2>
+                <p class="font-secondary paragraph-2">
+                  have a look at this awesome copy
+                </p>
+              </div>
+            </div>
+          </div>
+          ...
         </div>
-      </div>
-      <div class="portfolio-project-1 u-grid">
-        <img class="portfolio-project-img" src="img/notmilk.png" alt="" />
-        <div>
-          <h2 class="font-primary heading-2">Not Milk but super powered</h2>
-          <p class="font-secondary paragraph-2">
-            have a look at this awesome copy
-          </p>
-        </div>
-      </div>
-      <div class="portfolio-project-1 u-grid">
-        <img class="portfolio-project-img" src="img/notmilk.png" alt="" />
-        <div>
-          <h2 class="font-primary heading-2">Not Milk but super powered</h2>
-          <p class="font-secondary paragraph-2">
-            have a look at this awesome copy
-          </p>
-        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
     </section>
+
     <!-------------------------------------BLOG----------------------------------->
     <section class="blog grid12 u-padding-t-b">
       <h3 class="font-primary heading-2 grid-span">
