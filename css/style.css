@@ -275,16 +275,14 @@ h6 {
 .about {
   padding: 8rem 0; }
   .about-wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
     grid-column: 2/ 12;
     border-bottom: 1.5px solid #679267;
     padding-bottom: 3rem; }
   .about-text {
-    grid-column: 1 / 8;
     align-self: self-end;
     border-top: 1.5px solid #679267;
     padding-top: 3rem; }
   .about-img {
     width: 100%;
     margin-bottom: 2rem; }
-    .about-img-wrapper {
-      grid-column: 8 / 13; }
