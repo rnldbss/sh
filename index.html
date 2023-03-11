@@ -21,33 +21,40 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script
+      async
+      src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"
+    ></script>
 
-    <script src="nav.js" defer></script>
-    <script src="swiper.js" defer></script>
+    <script src="nav.js" defer async></script>
+    <script src="swiper.js" defer async></script>
   </head>
   <body>
     <!--------------------------------------HEADER----------------------------------->
     <header class="primary-header flex u-padding">
       <h3 class="font-primary heading-3">Sophia Habl</h3>
-      <button
-        class="mobile-nav-toggle"
-        aria-controls="nav"
-        aria-expanded="false"
-      >
-        <span class="sr-only">Menu</span>
-      </button>
-      <nav class="">
+      <nav>
         <ul id="nav" class="nav flex font-secondary" data-visible="false">
-          <li><a href="http://">HOME</a></li>
-          <li><a href="http://">ABOUT ME</a></li>
-          <li><a href="http://">CONTACT ME</a></li>
-          <li><a href="http://">SERVICES</a></li>
-          <li><a href="http://">PORTFOLIO</a></li>
-          <li><a href="http://">BLOG</a></li>
+          <div class="nav-link flex">
+            <li><a href="http://">ABOUT ME</a></li>
+            <li><a href="http://">PORTFOLIO</a></li>
+            <li><a href="http://">BLOG</a></li>
+          </div>
+          <div class="nav-contact flex">
+            <li><a href="http://">GET IN TOUCH</a></li>
+          </div>
         </ul>
+        <button
+          class="mobile-nav-toggle"
+          aria-controls="nav"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Menu</span>
+          <span><i class="fa-solid fa-bars"></i></span>
+        </button>
       </nav>
     </header>
+
     <!--------------------------------------HERO----------------------------------->
     <section class="hero grid12">
       <div class="hero-text">
@@ -64,25 +71,48 @@
 
       <!-- <img class="hero-img" src="img/sophia.jpg" alt="" /> -->
     </section>
+    <!------------------------------TEST--------------------------->
+    <section class="copy u-grid grid12">
+      <div class="copy-wrapper">
+        <h2 class="font-primary heading-2">
+          So, how can we turn this huge market opportunity into sustainable
+          sales for you and your brand?
+        </h2>
+        <p class="font-secondary paragraph-1">HIRE ME</p>
+        <p class="font-secondary paragraph-2">
+          As your data-driven copywriter with heart and ethics, I can help you
+          turn your cruelty-free brand into a household name. Let’s help
+          potential customers see why you’re the best cruelty-free brand on the
+          block.
+        </p>
+      </div>
+    </section>
+
     <!--------------------------------------PORTFOLIO----------------------------------->
 
-    <section class="portfolio">
-      <!-- Slider main container -->
+    <section class="portfolio u-grid grid2">
+      <div class="portfolio-text">
+        <h2 class="portfolio-work-title font-primary heading-2">
+          This awesome fucking work ive done
+        </h2>
+        <p class="portfolio-work-description font-secondary paragraph-2">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
+          repellendus laudantium veniam recusandae rerum, quia, esse alias.
+        </p>
+      </div>
       <div class="swiper">
-        <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
-          <!-- Slides -->
           <div class="swiper-slide">
             <div class="portfolio-project-1">
               <img class="portfolio-project-img" src="img/notmilk.png" alt="" />
-              <div>
+              <!-- <div>
                 <h2 class="font-primary heading-2">
                   Not Milk but super powered
                 </h2>
                 <p class="font-secondary paragraph-2">
                   have a look at this awesome copy
                 </p>
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="swiper-slide">
