@@ -45,7 +45,7 @@
   gap: var(--grid-gutter); }
 
 .u-color-secondary {
-  color: #679267; }
+  color: #4e944f; }
 
 .u-color-terciary {
   color: #ffffff; }
@@ -195,7 +195,7 @@ h6 {
   justify-content: flex-end; }
 
 .nav a:is(:hover, :focus) {
-  color: #679267; }
+  color: #4e944f; }
 
 .mobile-nav-toggle {
   display: none; }
@@ -206,7 +206,7 @@ h6 {
     position: fixed;
     z-index: 1000;
     inset: 0 0 0 30%;
-    background: rgba(103, 146, 103, 0.7);
+    background: rgba(78, 148, 79, 0.7);
     backdrop-filter: blur(2rem);
     color: #ffffff;
     flex-direction: column;
@@ -237,7 +237,7 @@ h6 {
     background-image: url(../img/menu-close.svg); } }
 
 .footer {
-  background-color: #679267;
+  background-color: #4e944f;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-items: center; }
   .footer-social {
@@ -250,23 +250,28 @@ h6 {
     color: aquamarine; }
 
 .copyright {
-  background-color: #679267;
+  background-color: #4e944f;
   text-align: center; }
 
 .portfolio {
-  height: 70vh;
-  justify-content: center;
-  align-items: center; }
-  .portfolio-project-1 {
-    align-items: center;
-    justify-content: center; }
-  .portfolio-project-img {
-    width: 30%; }
-
-.swiper {
-  width: 100%; }
-  .swiper-button-next, .swiper-button-prev {
-    color: #679267 !important; }
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  height: 100vh; }
+  .portfolio-img {
+    grid-row: 1 / span 2;
+    background-color: #4e944f;
+    display: grid; }
+  .portfolio-img > img {
+    width: 100%;
+    align-self: center; }
+  .portfolio-text {
+    grid-row: span 2;
+    align-self: center; }
+  .portfolio-btn {
+    background-color: transparent;
+    aspect-ratio: 1 / 1;
+    width: 3rem;
+    border: none;
+    border-radius: 50%; }
 
 .blog h3 {
   text-align: center;
@@ -289,11 +294,11 @@ h6 {
   .about-wrapper {
     grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
     grid-column: 2 / 12;
-    border-bottom: 1.5px solid #679267;
+    border-bottom: 1.5px solid #4e944f;
     padding-bottom: 3rem; }
   .about-text {
     align-self: self-end;
-    border-top: 1.5px solid #679267;
+    border-top: 1.5px solid #4e944f;
     padding-top: 3rem; }
   .about-img {
     width: 100%;
@@ -307,9 +312,9 @@ h6 {
   padding: 1.3em 3em;
   text-transform: uppercase;
   letter-spacing: 2.5px;
-  color: #679267;
+  color: #4e944f;
   background-color: #fff;
-  border: 2px solid #679267;
+  border: 2px solid #4e944f;
   border-radius: 15px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease 0s;
@@ -329,9 +334,9 @@ h6 {
 
 .btn-blog {
   padding: 15px 25px;
-  border: 2px solid #679267;
+  border: 2px solid #4e944f;
   border-radius: 15px;
-  color: #679267;
+  color: #4e944f;
   z-index: 1;
   background: transparent;
   position: relative;
